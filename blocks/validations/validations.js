@@ -22,12 +22,14 @@ const getValidations = (block) => {
         validationResponse['_embedded']["validations"].forEach(element => {
             console.log(element)
             validations.push(element);
-            let child = document.createElement("li");
-            child.innerHTML = "Validation id:" + element["validationId"] + " | " + "programId:" + element["programId"] + " | " + "environmentId:" + element["environmentId"] + " | " + "status:" + element["status"];
+            let listChild = document.createElement("li");
+            const validation = new Validation(element["validationId"], element["environmentId"], element["programId"], element["status"]);
 
-            list.appendChild(child)
+            listChild.innerHTML = "<p>" + validation.toString() + "</p>";
+            
+            list.appendChild(listChild)
 
-            console.log(child);
+            console.log(listChild);
         });
 
         
