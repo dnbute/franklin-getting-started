@@ -13,6 +13,11 @@ export default function decorate(block) {
             picWrapper.classList.add('columns-img-col');
           }
         }
+
+        const button = col.querySelector('button');
+        if (button) {
+            button.classList.remove('button');
+        }
       });
     });
   }
