@@ -1,6 +1,7 @@
 .columns > div {
     display: flex;
     flex-direction: column;
+    color: rgb(102, 116, 130);
   }
   
   .columns img {
@@ -8,7 +9,15 @@
   }
   
   .columns > div > div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     order: 1;
+  }
+
+  .columns > div > div > p:not(:first-of-type) {
+    color: rgb(102, 116, 130);
+    display: inline;
   }
   
   .columns > div > .columns-img-col {
@@ -18,16 +27,22 @@
   .columns > div > .columns-img-col img {
     display: block;
   }
+
   
   @media (min-width: 900px) {
     .columns > div {
       align-items: center;
       flex-direction: unset;
       gap: 32px;
+      display: flex;
     }
   
     .columns > div > div {
       flex: 1;
       order: unset;
+      text-transform: uppercase;
+      font-size: 1rem;
+      align-self: first baseline;
     }
+
   }
