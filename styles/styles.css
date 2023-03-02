@@ -12,15 +12,16 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: black;
   --link-hover-color: #136ff6;
-  --background-color: #f0b8b8;
+  --background-color: #f0f0f0;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
+  --button-color: #f0ea30;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -118,17 +119,16 @@ a.button:any-link, button {
   font-style: normal; 
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: var(--text-color);
+  background-color: var(--button-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  background-color: var(--button-color);
   cursor: pointer;
 }
 

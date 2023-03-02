@@ -1,17 +1,12 @@
 /* block specific CSS goes here */
-
-main .hero-container > div {
-    max-width: unset;
-}
-  
 main .hero-container {
     padding: 0;
 }
-  
+
+
 main .hero {
     position: relative;
-    padding: 32px;
-    min-height: 300px;
+    padding: 0;
 }
 
 main .hero h1 {
@@ -20,7 +15,6 @@ main .hero h1 {
     margin-right: auto;
     color: white;
 }
-
 
 main .hero picture {
     position: absolute;
@@ -38,3 +32,47 @@ main .hero img {
     width: 100%;
     height: 100%;
 }
+
+.hero > div > div {
+    text-align: left;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;
+}
+
+.hero > div > div h2 {
+    background-color: #f0f0f0;
+    opacity: 75%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+    height: 50%;
+    font-size: 1.5rem;
+}
+
+.hero > div > div h2 a {
+    font-size: 3rem;
+}
+
+.hero > div > div > p.button-container {
+    background-color: #f0f0f0;
+    opacity: 75%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50%;
+    height: 50%;
+    font-size: 1rem;
+    flex:1;
+}
+
+.hero > div > div > p > a.button {
+    opacity: 100%;
+}
+
