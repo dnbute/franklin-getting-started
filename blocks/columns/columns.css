@@ -8,14 +8,19 @@
     width: 100%;
   }
   
-  .columns > div > div {
+  .columns > div:not(:first-of-type) > div {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     order: 1;
   }
 
-  .columns > div > div > p:not(:first-of-type) {
+  .columns > div:first-of-type > div {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .columns > div:not(:first-of-type) > div > p:not(:first-of-type) {
     color: rgb(102, 116, 130);
     display: inline;
   }
