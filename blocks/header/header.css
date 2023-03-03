@@ -169,7 +169,7 @@ header nav[aria-expanded=true] .nav-sections {
 
 header nav .nav-sections ul  {
   list-style: none;
-  padding-left: 0;
+  padding-left: 70%;
   font-size: var(--body-font-size-s);
   font-weight: 500;
 }
@@ -224,16 +224,26 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections ul {
-    display: flex;
-    gap: 2em;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    height: 4rem;
+    gap: 1.5rem;
     margin: 0;
     font-size: var(--body-font-size-xs);
   }
 
   header nav .nav-sections > ul > li {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     position: relative;
     font-weight: 500;
+    font-size: 0.8rem;
+    background-size: cover;
+  }
+
+  header nav .nav-sections > ul > li:hover {
+    background-color: #f0ea30;
+    background-size: fill;
   }
 
   header nav .nav-sections > ul > li > ul {
