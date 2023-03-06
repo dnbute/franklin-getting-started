@@ -3,10 +3,14 @@ main .hero-container {
     padding: 0;
 }
 
+main .hero-container div.hero-wrapper {
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 main .hero {
     position: relative;
-    padding: 0;
 }
 
 main .hero h1 {
@@ -14,6 +18,10 @@ main .hero h1 {
     margin-left: auto;
     margin-right: auto;
     color: white;
+}
+
+main hero p {
+    height: fit-content;
 }
 
 main .hero picture {
@@ -35,40 +43,37 @@ main .hero img {
 
 .hero > div > div {
     text-align: left;
+    font-weight: lighter;
     display: flex;
     flex-direction:column;
     align-items:center;
     position: relative;
+    padding-top: 25rem;
 }
 
-.hero > div > div h2 {
-    background-color: #f0f0f0;
-    opacity: 75%;
+.hero > div > div h2,
+.hero > div > div h3,
+.hero > div > div > p.button-container  {
+    background-color: #fff;
+    opacity: 95%;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     width: 50%;
     height: 50%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight:normal;
+}
+
+.hero > div > div h3 {
+    font-family: var(--body-font-family);
 }
 
 .hero > div > div h2 a {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .hero > div > div > p.button-container {
-    background-color: #f0f0f0;
-    opacity: 75%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 50%;
-    height: 50%;
-    font-size: 1rem;
     flex:1;
 }
 

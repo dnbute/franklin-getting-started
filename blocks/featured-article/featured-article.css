@@ -10,6 +10,10 @@
   height: 100%;
 }
 
+.featured-article h2{
+    font-size: 1.5rem;
+  }
+
 .featured-article > div {
     display: flex;
     flex-direction: column;
