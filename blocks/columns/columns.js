@@ -1,3 +1,4 @@
+import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 export default function decorate(block) {
     const cols = [...block.firstElementChild.children];
     block.classList.add(`columns-${cols.length}-cols`);
@@ -24,4 +25,9 @@ export default function decorate(block) {
             anchor.classList.remove('button');
         }
     })
+
+  block.querySelectorAll('img').forEach((img) => {
+    console.log("merge");
+    img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]))
+  });
   }

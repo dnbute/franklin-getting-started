@@ -8,25 +8,28 @@
 }
 
 .articles > ul > li {
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+}
+
+.articles > ul > li div.cards-card-body p:nth-child(2) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
 .articles .cards-card-body {
     margin: 16px;
-    text-align: center;
-    font-weight: bold;
+    margin-left: 0;
+    text-align: left;
     font-size: 1rem;
-}
-
-.articles .cards-card-image {
-    line-height: 2;
-    height: 50%;
-    width: 50%;
-    padding-left: 4.5rem;
+    color: lightslategray;
 }
 
 .articles .cards-card-body > *:first-child {
     margin-top: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .articles > ul > li img {
