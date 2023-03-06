@@ -4,7 +4,6 @@ function decorateAccordion(el) {
       // Add a class to the title container
       title.classList.add('item-title');
       // Remove the empty div
-      title.querySelector(':scope > div:last-of-type').remove();
       // Add a class to the content
       title.nextElementSibling.classList.add('item-content');
       // Add a click handler to open the content

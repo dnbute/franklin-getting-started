@@ -1,7 +1,5 @@
 .accordion {
-    background: #EFEFEF;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
+    background: var(--background-color);
 }
 
 .accordion .item-title {
@@ -14,22 +12,16 @@
 }
 
 .accordion .item-title:after {
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid #a7a7a7;
-    border-right: 2px solid #a7a7a7;
-    transform-origin: 75% 75%;
-    transform: rotate(-45deg) translateY(-50%);
-    transition: transform .1s ease;
-    content: '';
-}
-
-.accordion .item-title.open {
-    background: #dddddd;
+    content: '➕';
 }
 
 .accordion .item-title.open::after {
-    transform: rotate(-135deg) translateX(50%);
+    content: '➖';
+ }
+
+.accordion .item-title.open {
+    background: var(--background-color);
+    border: 0;
 }
 
 .accordion .item-content {
@@ -37,9 +29,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     padding: 12px;
-    border-bottom: 1px solid #dddddd;
 }
 
 .accordion .item-title.open + .item-content {
-    display: grid;
+    display: inline-block;
 }
