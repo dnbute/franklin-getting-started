@@ -6,6 +6,10 @@ header .nav-wrapper {
   position: fixed;
 }
 
+html:not([data-scroll='80']) head .nav-wrapper div{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -142,7 +146,7 @@ header nav[aria-expanded=true] .nav-hamburger-icon::after {
 header .nav-brand {
   grid-area: brand;
   flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
+  font-size: var(--heading-font-size-xl);
   font-weight: 700;
   line-height: 1;
 }
@@ -238,12 +242,11 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
     font-weight: 500;
     font-size: 0.8rem;
-    background-size: cover;
+    padding: 1rem;
   }
 
   header nav .nav-sections > ul > li:hover {
     background-color: #f0ea30;
-    background-size: fill;
   }
 
   header nav .nav-sections > ul > li > ul {
