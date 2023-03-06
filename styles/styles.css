@@ -240,3 +240,14 @@ main .default-content-wrapper h2 {
   text-decoration: underline var(--button-color) 0.2rem;
   text-underline-offset: 1rem;
 }
+
+.half-full-page main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20%;
+}
+
+.half-full-page main > div {
+  width: 40%;
+}
