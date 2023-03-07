@@ -245,11 +245,23 @@ main .default-content-wrapper h2 {
 
 .half-full-page main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 20%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .half-full-page main > div {
-  width: 40%;
+  width: 50%;
+  margin-left: 40rem;
 }
+
+.half-full-page main > div:nth-child(2) {
+  width: 50%;
+  margin-left: 0;
+}
+
+.half-full-page main img {
+  max-width: 90%;
+  min-width: 720px;
+}
+
