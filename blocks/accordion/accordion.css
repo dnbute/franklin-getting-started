@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .accordion .item-title:after {
@@ -29,6 +31,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     padding: 12px;
+    padding-left: 0;
+    text-align: left;
+    font-size: 0.85rem;
 }
 
 .accordion .item-title.open + .item-content {

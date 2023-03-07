@@ -1,14 +1,28 @@
 footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
+  padding: 2rem 15rem;
+  background-color: var(--footer-background-color);
+  font-size: 0.8rem;
+  margin: 1rem auto 0;
+  width: 1200px;
 }
 
 footer .footer {
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
+}
+
+footer .footer p,
+footer .footer a {
+  color: var(--background-color);
 }
 
 footer .footer p {
   margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+footer .footer h1 {
+  margin: 0;
+  padding-top: 0rem;
+  color: var(--background-color);
 }
