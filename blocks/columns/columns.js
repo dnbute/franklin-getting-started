@@ -27,7 +27,6 @@ export default function decorate(block) {
     })
 
   block.querySelectorAll('img').forEach((img) => {
-    console.log("merge");
     img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]))
   });
   }
