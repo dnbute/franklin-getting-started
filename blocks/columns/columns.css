@@ -6,6 +6,7 @@
   
   .columns img {
     width: 100%;
+    height: 211px;
   }
   
   .columns > div:not(:first-of-type) > div {
