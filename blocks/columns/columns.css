@@ -5,7 +5,10 @@
   }
   
   .columns img {
-    width: 100%;
+    /* width will be 750
+    to mantain aspect ratio height is 211px
+    (should be double but it looks bad) */
+    width: 100%; 
     height: 211px;
   }
   

@@ -6,7 +6,7 @@ header .nav-wrapper {
   position: fixed;
 }
 
-html:not([data-scroll='80']) head .nav-wrapper div{
+html:not([data-scroll='0']) header .nav-wrapper{
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
