@@ -1,0 +1,71 @@
+div.adventure-tabs {
+    display: grid;
+    grid-template-columns: repeat(2rem, 0);
+    grid-template-rows: 70rem;
+}
+
+.adventure-tabs div {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+div.adventure-tabs > div > div[active = "false"]:not(:first-of-type) {
+    display: none;
+}
+
+.adventure-tabs > div > div[active = "true"] {
+    display: inline-block;
+}
+
+.adventure-tabs div > div#overview {
+    margin-left: 0;
+    position: relative;
+    background-color: var(--background-color);
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.adventure-tabs div > div#itinerary {
+    margin-left: 7rem;
+    position: relative;
+    background-color: var(--background-color);
+    display: inline-block;
+    padding: 0.5rem;
+}
+ 
+.adventure-tabs div > div#what-to-bring {
+    margin-left: 13.5rem;
+    position: relative;
+    background-color: var(--background-color);
+    display: inline-block;
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+.adventure-tabs div > div#what-to-bring + div {
+    display: flex;
+    flex-direction: column;
+}
+
+.adventure-tabs div > div#what-to-bring + div[active='false'] {
+    display: none;
+}
+
+.adventure-tabs div > div#what-to-bring + div > ul > li {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.adventure-tabs div > div#what-to-bring + div > ul > li::before {
+    content: '▸';
+    padding-right: 1rem;
+}
+
+.adventure-tabs div > div#overview[active = 'true'],
+.adventure-tabs div > div#itinerary[active = 'true'],
+.adventure-tabs div > div#what-to-bring[active = 'true'] {
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
