@@ -69,3 +69,9 @@ div.adventure-tabs > div > div[active = "false"]:not(:first-of-type) {
     color: white;
     display: inline-block;
 }
+
+.adventure-tabs div > div#overview:hover,
+.adventure-tabs div > div#itinerary:hover,
+.adventure-tabs div > div#what-to-bring:hover {
+    cursor:pointer;
+}
