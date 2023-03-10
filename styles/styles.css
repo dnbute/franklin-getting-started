@@ -280,5 +280,6 @@ main .default-content-wrapper h2 {
 
 .adventure-section div:first-of-type {
   margin-top: 0;
+  word-break: break-word;
 }
 

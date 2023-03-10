@@ -1,0 +1,15 @@
+div.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+div.breadcrumbs > div:nth-of-type(2n) {
+    color: var(--button-color);
+}
+
+div.breadcrumbs > div:first-child {
+    font-weight: 600;
+}
