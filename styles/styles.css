@@ -40,7 +40,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 69px;
+  --nav-start-height: 69px;
 
 }
 
@@ -59,7 +59,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: var(--nav-start-height);
 }
 
 h1, h2, h3,
@@ -69,7 +69,7 @@ h4, h5, h6 {
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
-  scroll-margin: calc(var(--nav-height) + 1em);
+  scroll-margin: calc(var(--nav-start-height) + 1em);
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
@@ -239,9 +239,11 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-main .default-content-wrapper h2 {
-  text-decoration: underline var(--button-color) 0.2rem;
-  text-underline-offset: 1rem;
+main .default-content-wrapper h2:after {
+  content: "";
+  display: block;
+  border-bottom: var(--button-color) solid 0.2rem;
+  width: 84px;
 }
 
 .half-full-page main {

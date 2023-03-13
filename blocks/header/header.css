@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  padding: 50px 0px;
 }
 
 html:not([data-scroll='0']) header .nav-wrapper{
@@ -14,22 +15,22 @@ header nav {
   box-sizing: border-box;
   display: grid;
   grid-template:
-    'hamburger brand tools' var(--nav-height)
+    'hamburger brand tools' var(--nav-start-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 2em;
   margin: auto;
   max-width: 1264px;
-  height: var(--nav-height);
+  height: var(--nav-start-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
 }
 
 header nav[aria-expanded=true] {
   grid-template:
-    'hamburger brand' var(--nav-height)
+    'hamburger brand' var(--nav-start-height)
     'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
+    'tools tools' var(--nav-start-height) / auto 1fr;
   overflow-y: auto;
   min-height: 100vh;
 }
@@ -285,4 +286,19 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+
+@keyframes nav-get-small {
+  from {
+    padding: 50px 0px;
+  }
+
+  to {
+    padding: 15px 0px 5px 0px;
+  }
+}
+
+html:not([data-scroll='0']) header .nav-wrapper {
+  animation: nav-get-small 0.5s forwards;
 }
